@@ -43,6 +43,7 @@ Welcome to the Supervised Fine-Tuned DistilGPT2 Demo App! This web-based applica
 
    You can access the application via http://localhost:8080
 
-The aplication should look like this.
+After running the application, it should look like this.
+![image](https://github.com/thassung/SFT-DistilGPT2/assets/105700459/308486f3-a6b1-4b0b-87aa-d8c176e997ca)
 
 
