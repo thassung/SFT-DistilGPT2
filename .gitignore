@@ -1,3 +1,2 @@
 /mlruns
-/model
-    
+__pycache__

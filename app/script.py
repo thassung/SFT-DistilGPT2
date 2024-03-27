@@ -1,6 +1,6 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
-file_path = '.'
+file_path = '..'
 model_path = f'{file_path}/model/checkpoint-625'
 
 model = AutoModelForCausalLM.from_pretrained(
