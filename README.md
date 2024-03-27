@@ -46,4 +46,8 @@ Welcome to the Supervised Fine-Tuned DistilGPT2 Demo App! This web-based applica
 After running the application, it should look like this.
 ![image](https://github.com/thassung/SFT-DistilGPT2/assets/105700459/308486f3-a6b1-4b0b-87aa-d8c176e997ca)
 
+### Evaluation
+
+For model text generation performance, you can see a couple of generated text compared side-to-side with the gold response in the last section of this [python notebook](https://github.com/thassung/SFT-DistilGPT2/blob/main/SFT.ipynb).
+
 
