@@ -15,8 +15,8 @@ def predict():
     if request.method == 'POST':
         inputData = request.json
         instruction = inputData['instruction'] 
-        max_length = inputData['max_length'] 
-        temperature = inputData['temperature'] 
+        max_length = int(inputData['max_length'])
+        temperature = float(inputData['temperature'])
 
         generated_text = generate_text(instruction=instruction,
                                        max_length=max_length,

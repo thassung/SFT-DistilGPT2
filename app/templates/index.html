@@ -15,14 +15,14 @@
   </style>
   <body>
     <div class="container mt-6">
-      <h1>Supervised Fine-Tuned distilgpt2</h1>
+      <h1>Supervised Fine-Tuned DistilGPT2</h1>
       <p class="brief-description">
         <em>a demo app from <a href='https://github.com/thassung/SFT-DistilGPT2'>github repo</a></em>
       </p>
       <form id="inputForm">
         <div class="form-group">
           <label for="instruction">Prompt</label>
-          <instruction type="text" class="form-control" id="instruction" name="instruction" placeholder="Enter your prompt"/>
+          <input type="text" class="form-control" id="instruction" name="instruction" placeholder="Enter your prompt"/>
         </div>
         <div class="row">
           <div class="form-group col-md-5">
@@ -34,7 +34,7 @@
           <div class="form-group col-md-3">
             <label for="temperature">Temperature</label>
             <input
-              type="range" class="form-control" id="temperature" name="temperature" min="0" max="1" step="0.01" value="0.7" oninput="update_temperature()">
+              type="range" class="form-control" id="temperature" name="temperature" min="0.01" max="1" step="0.01" value="0.7" oninput="update_temperature()">
             <p id="temperatureDisplay">Selected temperature: 0.7</p>
           </div>
         </div>
@@ -42,7 +42,7 @@
           Submit
         </button>
       </form>
-      <div id="result" class="mt-3 h4"></div>
+      <div id="result" class="mt-3"></div>
     </div>
 
     <!-- updating slider value shown -->
@@ -66,7 +66,7 @@
         $('#submitBtn').click(function () {
           event.preventDefault();
           var inputData = {
-            input: $('#input').val(),
+            instruction: $('#instruction').val(),
             max_length: $('#max_length').val(),
             temperature: $('#temperature').val() 
           };
